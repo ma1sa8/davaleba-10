@@ -144,20 +144,15 @@ function suggestedMovies(movieSug){
   
   movieSuggestion.innerHTML = ""
   const suggest = []
-  let selectedIndices = [];  // Array to keep track of selected indices
+  let selectedIndices = [];
 
   for (let i = 0; i < 4; i++) {
     let randomIndex;
-
-    // Generate a new random index until it is not in the selectedIndices array
     do {
         randomIndex = Math.floor(Math.random() * movieSug.length);
     } while (selectedIndices.includes(randomIndex));
-
-    // Add the selected index to the selectedIndices array
     selectedIndices.push(randomIndex);
 
-    // Push the corresponding movie suggestion to the suggest array
     suggest.push(movieSug[randomIndex]);
   }
   // for(let i = 0;i<4;i++){
