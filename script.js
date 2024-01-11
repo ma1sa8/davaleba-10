@@ -22,7 +22,7 @@ document.getElementById("loginForm").addEventListener("submit",  function(e){
     const passWord = document.getElementById("password").value
 
     // ორივე მეთოდი მუშაობს
-    for(let i = 0; i < user.length - 1; i++){
+    for(let i = 0; i < user.length; i++){
         if(userName === user[i].username &&  passWord === user[i].password){
             const token = Math.random().toString(36).substr(2)
             console.log(token)

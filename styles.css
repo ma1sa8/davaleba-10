@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.movieContianer{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie{
+    width: 30%;
+    height: 10%;
+    background-color: lightgray;
+    padding: 16px;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 20px ;
+    cursor: pointer;
+}
+.vote{
+    font-weight: bold;
+    font-size: 26px;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.orange {
+    background-color: orange;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.401);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.search{
+    padding: 10px;
+
+}
+
+.banner_img{
+    height: 500px;
+    margin-bottom: 50px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.seat_places{
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    background-color: rgba(0, 76, 255, 0.445);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 30px 0px 30px 0px;
+}
+.seat_places_clicked{
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    background-color: rgba(34, 0, 255, 0.47);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#seat{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
+}
